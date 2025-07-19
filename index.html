@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rosvin Schools Graduants</title>
+    <link rel="stylesheet" href="graduation.css">
+</head>
+<body>
+   <header>
+    <div id="header">
+        <h1>OUR GRADUATING STUDENTS</h1>
+        <input type="text" id="searchInput" placeholder="Search students by name..." />
+        <button onclick="searchStudents()">Search</button>
+    </div>
+   </header>
+
+   <!-- Group Pictures Slideshow -->
+   <section id="group-gallery">
+      <div class="slideshow-container">
+         <img class="group-slide active" src="pictures/SS3/senior sec/20250623_123049.jpg" alt="Group 1" />
+         <img class="group-slide" src="pictures/JSS3/20250528_134954.jpg" alt="Group 2" />
+         <img class="group-slide" src="pictures/BASIC 5/Group photo 2.jpg" alt="Group 3" />
+      </div>
+   </section>
+
+   <main>
+    <div id="basic5" style="margin-bottom: 30px;">
+        <h1 style="color:brown; text-align: left;">BASIC 5</h1>
+        <hr style="background-color:brown; height: 3px;">
+        <div id="basic5-container" class="student-container"></div>
+    </div>
+
+    <div id="js3" style="margin-bottom: 30px">
+        <h1 style="color:brown; text-align: left;">JSS 3</h1>
+        <hr style="background-color:brown; height: 3px;">
+        <div id="js3-container" class="student-container"></div>
+    </div>
+
+    <div id="ss3" style="margin: 30px">
+        <h1 style="color:brown; text-align: left;">SSS 3</h1>
+        <hr style="background-color:brown; height: 3px;">
+        <div id="ss3-container" class="student-container"></div>
+    </div>
+
+    <div id="student-box">
+        <div id="student-box-content">
+            <span id="close">&times;</span>
+            <h2 id="student-name"></h2>
+            <p id="student-class"></p>
+            <p id="student-quote"></p>
+        </div> 
+    </div>
+
+    <p id="no-results" style="display:none; color:red; font-weight:bold;">No Students found.</p>
+   </main>
+
+   <script src="graduation.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+   <script>
+      window.onload = function () {
+         confetti({ particleCount: 180, spread: 120, origin: { y: 0.6 } });
+      };
+   </script> -->
+</body>
+</html>

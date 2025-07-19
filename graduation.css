@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    background-color: #f1cfcf;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #f1cfcf;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+#header {
+    padding-top: 5px;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0 4px 8px #9c4436;
+    background-color: #9c4436;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.student-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.class-card {
+    background-color: #9c4436;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #e8bbbb;
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 300px;
+    animation: fadeIn 1s ease-in;
+}
+
+.class-card:hover {
+    transform: scale(1.05);
+}
+
+.class-image {
+    width: 240px;
+    height: 250px;
+    margin-bottom: 1px;
+}
+
+.movie-details {
+    padding: 15px;
+    text-align: left;
+}
+
+#kid-name {
+    color: #f1cfcf;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#student-box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+#student-box-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slideshow */
+#group-gallery {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.group-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.group-slide.active {
+    opacity: 1;
+}
