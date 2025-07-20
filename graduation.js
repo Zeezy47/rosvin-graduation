@@ -722,21 +722,21 @@ Ss3[0] = {
     title: "OBI MIRACLE",
     fullname: "OBI MIRACLE",
     Class: "SS 3",
-    image: "pictures/SS3/senior sec/20250616_114603(1).jpg",
+    image: "pictures/SS3/20250616_114603(1).jpg",
     Description: "Education is the most powerful weapon which you can use to change the world."
 }
 Ss3[1] = {
     title: "ODALONU HENRY",
     fullname: "ODALONU HENRY GOODLUCK",
     Class: "SS 3", 
-    image: "pictures/SS3/senior sec/20250616_114757(1).jpg",
+    image: "pictures/SS3/20250616_114757(1).jpg",
     Description: "Go confidently in the direction of your dreams. Live the life you have imagined"
 }
 Ss3[2] = {
     title: "CROMWELL MARTINS",
     fullname: "CROMWELL MARTINS ZOE",
     Class: "SS 3", 
-    image: "pictures/SS3/senior sec/20250617_133044.jpg",
+    image: "pictures/SS3/20250617_133044.jpg",
     Description: "Some graduate with honors, I am just honored to graduate."
 }
 
@@ -744,7 +744,7 @@ Ss3[3] = {
     title: "ECHEFULEM MICHAEL",
     fullname: "ECHEFULEM MICHAEL",
     Class: "SS 3", 
-    image: "pictures/SS3/senior sec/20250623_121147(1).jpg",
+    image: "pictures/SS3/20250623_121147(1).jpg",
     Description: "It always seems impossible until it’s done."
 }
 
@@ -752,14 +752,14 @@ Ss3[4] = {
     title: "UKWOMA KYRIAN",
     fullname: "UKWOMA KYRIAN",
     Class: "SS 3", 
-    image: "pictures/SS3/senior sec/20250623_121342(1).jpg",
+    image: "pictures/SS3/20250623_121342(1).jpg",
     Description: "You’re off to great places. Today is your day. Your mountain is waiting, so get on your way!"
 }
 Ss3[5] = {
      title: "OBOM DESTINY",
      fullname: "OBOM DESTINY",
     Class: "SS 3", 
-    image: "pictures/SS3/senior sec/20250623_121542(1).jpg",
+    image: "pictures/SS3/20250623_121542(1).jpg",
     Description: "The future belongs to those who believe in the beauty of their dreams."
 }
 
