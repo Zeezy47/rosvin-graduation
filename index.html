@@ -8,53 +8,93 @@
 <body>
    <header>
     <div id="header">
-        <h1>OUR GRADUATING STUDENTS</h1>
-        <input type="text" id="searchInput" placeholder="Search students by name..." />
-        <button onclick="searchStudents()">Search</button>
+        <img src="Rosvin logo.png" alt="Rosvin-logo">
+        <h1>ROSVIN INTERNATIONAL SCHOOLS</h2>
+        <h2>OUR GRADUATING STUDENTS</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search students by name..." id="searchInput">
+            <button onclick="searchStudents()" class="search-button">
+            search
+            </button>
+        </div>
+        <nav style="display: flex;">
+            <a href="#transition">TRANSITION</a>
+            <a href="#basic5">BASIC 5</a>
+            <a href="#js3">JS 3</a>
+            <a href="#ss3">SS 3</a>
+         </nav>
     </div>
    </header>
 
-   <!-- Group Pictures Slideshow -->
-   <section id="group-gallery">
-      <div class="slideshow-container">
-         <img class="group-slide active" src="pictures/SS3/senior sec/20250623_123049.jpg" alt="Group 1" />
-         <img class="group-slide" src="pictures/JSS3/20250528_134954.jpg" alt="Group 2" />
-         <img class="group-slide" src="pictures/BASIC 5/Group photo 2.jpg" alt="Group 3" />
-      </div>
-   </section>
+    <section id="group-gallery">
+    <div class="slideshow-container">
+        <img class="group-slide" src="pictures/SS3/senior sec/20250623_123049(1).jpg" alt="Group 1" />
+        <img class="group-slide" src="pictures/JSS3/20250528_134954(1).jpg" alt="Group 2" />
+        <img class="group-slide" src="pictures/BASIC 5/Group photo 2.jpg" alt="Group 3" />
+        <img class="group-slide" src="pictures/transition/20250701_102512.jpg" alt="Group 4" />
+        <img class="group-slide" src="pictures/JSS3/20250528_132444.jpg" alt="Group 5" />
+        <img class="group-slide" src="pictures/transition/20250701_102557.jpg" alt="Group 6" />
+    </div>
+    </section>
+   
 
    <main>
-    <div id="basic5" style="margin-bottom: 30px;">
+
+    <div id="transition" style="margin: 30px;">
+        <h1 style="color:brown; text-align: left;">TRANSITION</h1>
+        <hr style="background-color:brown; height: 3px;">
+        <div id="transition-container" class="student-container"></div>
+        <p id="no-results" style="display:none; color:red; font-weight:bold;">No Students found.</p>
+    </div>
+
+    <div id="basic5" style="margin: 30px;">
         <h1 style="color:brown; text-align: left;">BASIC 5</h1>
         <hr style="background-color:brown; height: 3px;">
         <div id="basic5-container" class="student-container"></div>
+        <p id="no-results" style="display:none; color:red; font-weight:bold;">No Students found.</p>
     </div>
 
-    <div id="js3" style="margin-bottom: 30px">
+    <div id="js3" style="margin: 30px">
         <h1 style="color:brown; text-align: left;">JSS 3</h1>
         <hr style="background-color:brown; height: 3px;">
         <div id="js3-container" class="student-container"></div>
+        <p id="no-results" style="display:none; color:red; font-weight:bold;">No Students found.</p>
     </div>
 
     <div id="ss3" style="margin: 30px">
         <h1 style="color:brown; text-align: left;">SSS 3</h1>
         <hr style="background-color:brown; height: 3px;">
         <div id="ss3-container" class="student-container"></div>
+        <p id="no-results" style="display:none; color:red; font-weight:bold;">No Students found.</p>
     </div>
 
     <div id="student-box">
         <div id="student-box-content">
             <span id="close">&times;</span>
             <h2 id="student-name"></h2>
-            <p id="student-class"></p>
-            <p id="student-quote"></p>
+            <p id="student-class" style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;"></p>
+            <p id="student-quote" style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;"></p>
         </div> 
     </div>
 
     <p id="no-results" style="display:none; color:red; font-weight:bold;">No Students found.</p>
    </main>
+        
+   <footer>
+    <div class="footer-container">
+        <h2>Rosvin International Schools</h2>
+        <p>#9 Apa-Okolo Amechi Road, Opp. Aker Junction,<br>
+        By Slaughter Road, Rumuolumeni,<br>
+        Port Harcourt, Rivers State.</p>
+        <p>📞 08104497494, 08183063906, 09017838328</p>
+        <p>✉️ rosvininternationalschools@gmail.com</p>
+        <div class="footer-bottom">
+        &copy; 2025 Rosvin International Schools. All rights reserved.
+        </div>
+    </div>
+    </footer>
 
-   <script src="graduation.js"></script>
+    <script src="graduation.js"></script>
    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
    <script>
       window.onload = function () {
