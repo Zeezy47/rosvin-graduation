@@ -3,29 +3,112 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 5px;
-    text-align: center;
+    /* text-align: center; */
     background-color: #f1cfcf;
 }
 
-h1 {
-    margin-bottom: 20px;
+
+h2{
+     margin: 0;
+     padding-bottom: 5px;
+}
+
+h1, h2 {
     color: #f1cfcf;
 }
 
+header img{
+    padding-top: 5px ;
+    margin-bottom:0;
+    height: 50px;
+    width: 55px;
+}
+
 header h1 {
-    font-size: 50px;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 #header {
+    text-align: center;
     padding-top: 5px;
-    height: 150px;
+    height: 210px;
     width: 100%;
     box-shadow: 0 4px 8px #9c4436;
     background-color: #9c4436;
 }
 
+.search-container {
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+#searchInput {
+    height: 30px;
+    width: 100%;
+    padding: 10px 45px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-button {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e8bbbb;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: #e6aeae;
+}
+
+button{
+    width: 70px;
+    height: 30px;
+    margin-left: -1px;
+}
+
 main {
     margin-top: 50px;
+}
+#student-box-content h2 {
+    color: #9c4436;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e8bbbb;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    background-color: rgba(223, 127, 127, 0.2);
 }
 
 .student-container {
@@ -81,7 +164,7 @@ main {
 }
 
 #student-box-content {
-    background-color: #fff;
+    background-color: rgba(244, 240, 234, 0.953);
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -131,4 +214,36 @@ main {
 
 .group-slide.active {
     opacity: 1;
+}
+footer {
+  background-color: #cf7070;
+  color: #fff;
+  padding: 40px 20px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: brown;
+}
+
+.footer-container p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+  border-top: 1px solid #444;
+  padding-top: 10px;
 }
